@@ -1,0 +1,46 @@
+*{
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	border: 2px solid black;
+	height: 30px;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.btn{
+	line-height: 30px;
+	color: red;
+	display: flex;
+	flex-direction: column;
+	padding: 0px 5px 0px 5px;
+	transition: transform 200ms ease
+}
+.btn::after{
+	content: "BUTTON";
+	color: green;
+	width: 100%;
+}
+
+.container:hover .btn{
+	transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
